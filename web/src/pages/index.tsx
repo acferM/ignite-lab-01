@@ -17,6 +17,10 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
     }
   }
 
+	console.log(session.accessToken)
+	console.log('--------------------------------------')
+	console.log(session.accessToken)
+
   return {
     redirect: {
       destination: '/app',
