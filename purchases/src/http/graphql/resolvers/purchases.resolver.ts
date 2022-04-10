@@ -13,7 +13,7 @@ import { PurchasesService } from '../../../services/purchases.service';
 import { AuthorizationGuard } from '../../auth/authorization.guard';
 import { AuthUser, CurrentUser } from '../../auth/current-user';
 import { CreatePurchaseInput } from '../inputs/create-purchase-input';
-import { Purchase } from '../models/Purchase';
+import { Purchase } from '../models/purchase';
 
 @Resolver(() => Purchase)
 export class PurchasesResolver {

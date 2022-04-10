@@ -17,7 +17,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
     }
   }
 
-	console.log(session.accessToken)
+	console.log(session.idToken)
 	console.log('--------------------------------------')
 	console.log(session.accessToken)
 
