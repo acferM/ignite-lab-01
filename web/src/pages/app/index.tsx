@@ -1,13 +1,17 @@
-import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
+import { gql, useQuery } from "@apollo/client";
+import { getAccessToken, useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
 import type { NextPage } from "next";
+import { useGetProductsQuery } from "../../graphql/generated/graphql";
+import { withApollo } from "../../lib/withApollo";
 
 const Home: NextPage = () => {
   const { user } = useUser();
+  const { data, loading, error } = useGetProductsQuery()
 
   return (
     <div>
       <h1>Hello World</h1>
-
+      <pre>{JSON.stringify(data, null, 2)}</pre>
       <pre>
         {JSON.stringify(user, null, 2)}
       </pre>
@@ -15,6 +19,12 @@ const Home: NextPage = () => {
   )
 }
 
-export const getServerSideProps = withPageAuthRequired()
+export const getServerSideProps = withPageAuthRequired({
+  getServerSideProps: async ({ req, res }) => {
+    return {
+      props: {}
+    }
+  }
+})
 
-export default Home
+export default withApollo(Home)
