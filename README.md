@@ -2,7 +2,7 @@
 
 The ignite lab is a event made by [Rocketseat](https://github.com/rocketseat-education), aiming to show new techs and enviroments to create projects.
 
-In that app, i've learned microservices backend strategies using Kafka + GraphQL + NestJS.
+In this app, i've created a online course platform, in which learned microservices backend strategies using Kafka + GraphQL + NestJS.
 
 ## Content
 - <a href="#authors">Authors</a>
@@ -585,6 +585,7 @@ The `ID` scalar type represents a unique identifier, often used to refetch an ob
 ### String
 
 The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+
 ## Improvements
 
 This repository, follows the construction in the classes, although there could be some improvements:
