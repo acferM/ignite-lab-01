@@ -4,22 +4,28 @@ The ignite lab is a event made by [Rocketseat](https://github.com/rocketseat-edu
 
 In that app, i've learned microservices backend strategies using Kafka + GraphQL + NestJS.
 
-
-
+## Content
+- <a href="#authors">Authors</a>
+- <a href="#stack">Used Stack</a>
+- <a href="#backend">Running backend locally</a>
+- <a href="#backend_env">Backend enviroment variables</a>
+- <a href="#frontend">Running frontend locally</a>
+- <a href="#frontend_env">Frontend enviroment variables</a>
+- <a href="#docs">Documentation</a>
 
 ## Authors
 
 - [Matheus Acfer](https://www.github.com/acferM)
 
 
-## Used Stack
+<h2 id="stack">Used Stack</h2>
 
 - **Front-end:** [React](https://pt-br.reactjs.org/), [NextJS](https://nextjs.org), [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/), [TailwindCSS](https://tailwindcss.com/)
 
 - **Back-end:** [Node](https://nodejs.org), [NestJS](https://nestjs.com/), [Prisma](https://prisma.io), [Docker Compose](https://docs.docker.com/compose/), [Kafka](https://kafka.apache.org/), [GraphQL](https://graphql.org/), [Apollo Federation](https://www.apollographql.com/docs/federation/)
 
 
-## Running backend locally
+<h2 id="backend">Running backend locally</h2>
 
 ### Clone the project
 
@@ -108,7 +114,7 @@ in the repository folder, run:
         cd gateway && npm run dev
         ```
 
-## Backend enviroment variables
+<h2 id="backend_env">Backend enviroment variables</h2>
 
 To run this project, you will need the following enviroment variables in your .env file
 
@@ -129,7 +135,8 @@ To run this project, you will need the following enviroment variables in your .e
     `AUTH0_DOMAIN` The domain of your [AUTH0](https://auth0.com/) app
 
     `DATABASE_URL="postgresql://docker:docker@localhost:5432/classroom?schema=public"` Url to connect to the database created with docker-compose in [Prisma](https://prisma.io)
-## Running frontend locally
+    
+<h2 id="frontend">Running frontend locally</h2>
 
 ### Install dependencies
 
@@ -162,7 +169,9 @@ In the web folder, run:
 
     ```bash
     npm run dev
-    ```## Fronted enviroment variables
+    ```
+   
+<h2 id="frontend_env">Fronted enviroment variables</h2>
 
 To run this project, you will need the following enviroment variables in your .env.local file
 
@@ -178,7 +187,7 @@ To run this project, you will need the following enviroment variables in your .e
 
 `AUTH0_ISSUER_BASE_URL` Base url from the app issuar in [AUTH0](https://auth0.com/)
 
-## API documentation
+<h2 id="docs">API documentation</h2>
 
 This api uses [GraphQL](https://graphql.org/), all queries runs in the `http://localhost:3332/graphql` route
 
