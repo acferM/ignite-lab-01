@@ -137,14 +137,14 @@ In the repository folder, run:
 
 - with yarn:
 
-    1. ```bash
-        cd web && yarn
-        ```
+    ```bash
+    cd web && yarn
+    ```
 - with npm:
 
-    2. ```bash
-        cd web && npm i
-        ```
+    ```bash
+    cd web && npm i
+    ```
 
 ### Setup enviroment variables
 Read the next section to setup the frotend .env file
@@ -155,14 +155,14 @@ In the web folder, run:
 
 - with yarn:
 
-    1. ```bash
-        yarn dev
-        ```
+    ```bash
+    yarn dev
+    ```
 - with npm:
 
-    2. ```bash
-        npm run dev
-        ```## Fronted enviroment variables
+    ```bash
+    npm run dev
+    ```## Fronted enviroment variables
 
 To run this project, you will need the following enviroment variables in your .env.local file
 
